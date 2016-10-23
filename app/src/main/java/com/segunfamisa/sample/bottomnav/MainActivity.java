@@ -14,7 +14,7 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity {
     private static final String SELECTED_ITEM = "arg_selected_item";
 
-    private BottomNavigationView mButtomNav;
+    private BottomNavigationView mBottomNav;
     private int mSelectedItem;
 
     @Override
@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mButtomNav = (BottomNavigationView) findViewById(R.id.navigation);
-        mButtomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        mBottomNav = (BottomNavigationView) findViewById(R.id.navigation);
+        mBottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 selectFragment(item);
@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
         MenuItem selectedItem;
         if (savedInstanceState != null) {
             mSelectedItem = savedInstanceState.getInt(SELECTED_ITEM, 0);
-            selectedItem = mButtomNav.getMenu().findItem(mSelectedItem);
+            selectedItem = mBottomNav.getMenu().findItem(mSelectedItem);
         } else {
-            selectedItem = mButtomNav.getMenu().getItem(0);
+            selectedItem = mBottomNav.getMenu().getItem(0);
         }
         selectFragment(selectedItem);
     }
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        MenuItem homeItem = mButtomNav.getMenu().getItem(0);
+        MenuItem homeItem = mBottomNav.getMenu().getItem(0);
         if (mSelectedItem != homeItem.getItemId()) {
             // select home item
             selectFragment(homeItem);
@@ -80,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
         mSelectedItem = item.getItemId();
 
         // uncheck the other items.
-        for (int i=0; i<mButtomNav.getMenu().size(); i++) {
-            MenuItem menuItem = mButtomNav.getMenu().getItem(i);
+        for (int i = 0; i< mBottomNav.getMenu().size(); i++) {
+            MenuItem menuItem = mBottomNav.getMenu().getItem(i);
             menuItem.setChecked(menuItem.getItemId() == item.getItemId());
         }
 
