@@ -1,5 +1,5 @@
-# ButtomNavigationView demo
-Demo app for the new [ButtomNavigationView](https://developer.android.com/reference/android/support/design/widget/BottomNavigationView.html) in Android Support library
+# BottomNavigationView demo
+Demo app for the new [BottomNavigationView](https://developer.android.com/reference/android/support/design/widget/BottomNavigationView.html) in Android Support library
 
 # Requirements
   * Android Studio
