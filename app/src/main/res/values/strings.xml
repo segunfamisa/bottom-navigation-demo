@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">sample-buttom-navigation</string>
+    <string name="app_name">Buttom Nav</string>
+
+    <string name="text_home">Home Fragment</string>
+    <string name="text_notifications">Notifications Fragment</string>
+    <string name="text_search">Search Fragment</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_notifications">Notifications</string>
 </resources>
