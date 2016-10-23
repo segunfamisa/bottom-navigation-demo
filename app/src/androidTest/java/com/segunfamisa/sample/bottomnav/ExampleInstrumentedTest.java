@@ -1,4 +1,4 @@
-package com.segunfamisa.sample.buttomnav;
+package com.segunfamisa.sample.bottomnav;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

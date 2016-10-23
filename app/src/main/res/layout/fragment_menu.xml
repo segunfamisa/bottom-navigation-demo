@@ -3,7 +3,7 @@
     android:id="@+id/fragment_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.segunfamisa.sample.buttomnav.MenuFragment">
+    tools:context="com.segunfamisa.sample.bottomnav.MenuFragment">
 
     <TextView
         android:id="@+id/text"
