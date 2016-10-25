@@ -8,6 +8,9 @@ Demo app for the new [BottomNavigationView](https://developer.android.com/refere
     * Android Build-tools 25
     * Android SDK Platform-tools 25
 
+# Gif Demo
+![alt text](https://imgur.com/y0uv4tX.gif" "Demo app")
+
 # Screenshots
 ![alt text](screens.png "Screens")
 
