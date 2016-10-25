@@ -1,5 +1,6 @@
 # BottomNavigationView demo
 Demo app for the new [BottomNavigationView](https://developer.android.com/reference/android/support/design/widget/BottomNavigationView.html) in Android Support library
+Follow up blogpost is here: https://segunfamisa.com/posts/bottom-navigation-view-android
 
 # Requirements
   * Android Studio
